@@ -40,41 +40,53 @@ src/
    - MySQL Server running
 
 2. Clone this repository:
+   
    in bash
    git clone https://github.com/your-username/incidentlogapi.git
+   
    cd incidentlogapi
    
 
-3. Create a MySQL database:
-   sql
+4. Create a MySQL database:
+   
    CREATE DATABASE incidentdb;
 
-4. Configure `src/main/resources/application.properties`:
-properties
+5. Configure `src/main/resources/application.properties`:
+6. 
 MySQL Database Configuration
+
 spring.datasource.url=jdbc:mysql://localhost:3306/your_db
+
 spring.datasource.username=your_mysql_username
+
 spring.datasource.password=your_mysql_password
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
 ✅ Replace `your_mysql_username` and `your_mysql_password` accordingly.
 
 5. Build the project:
-   bash
+
+   
    mvn clean install
    
 
-6. Run the project:
-   bash
+7. Run the project:
+
+   
    mvn spring-boot:run
    
 
-7. App will start at:  
+9. App will start at:
+    
    http://localhost:5050
 
  📚 API Endpoints
+ 
  GET  /api/incidents  Get all incidents 
  
  GET /api/incidents/{id}  Get incident by id 
@@ -86,6 +98,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 Postman-
 
 📬 Example Requests
+
  ➡️ Get all incidents
  
  GET http://localhost:5050/api/incidents
@@ -102,7 +115,9 @@ Postman-
 
 -description {
   "title": "Server Crash",
+  
   "description": "The server went down during heavy traffic.",
+  
   "severity": "High"
 }
 
