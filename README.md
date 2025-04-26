@@ -30,6 +30,8 @@ src/
      │         └── exception/
      └── resources/
           ├── application.properties
+
+          
  🚀 How to Run
 
 1. Make sure you have:
@@ -74,27 +76,43 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
  📚 API Endpoints
  GET  /api/incidents  Get all incidents 
+ 
  GET /api/incidents/{id}  Get incident by id 
+ 
  POST  /api/incidents  Create new incident 
+ 
  DELETE /api/incidents/{id}  Delete incident by id 
+ 
 Postman-
+
 📬 Example Requests
  ➡️ Get all incidents
+ 
  GET http://localhost:5050/api/incidents
+ 
 ➡️ Get incident by ID
+
  GET http://localhost:5050/api/incidents/1
+ 
  ➡️ Create new incident
+ 
  POST http://localhost:5050/api/incidents 
+ 
 -Header "Content-Type: application/json" 
+
 -description {
   "title": "Server Crash",
   "description": "The server went down during heavy traffic.",
   "severity": "High"
 }
+
 ➡️ Delete incident
+
  DELETE http://localhost:5050/api/incidents/1
+ 
 ⚡ Author
-Made with ❤️ by **Bindu sree**  
+Made with ❤️ by **Bindu sree**
+
  🌟 Ready to 🚀
 This project shows you understand full backend development —  
 building services, databases, APIs, exception handling 
