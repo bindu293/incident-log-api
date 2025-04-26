@@ -1,4 +1,3 @@
- 📋 README.md
 
 📋 Incident Log API
 
@@ -20,16 +19,16 @@ A simple, clean **Spring Boot + Java + MySQL** REST API to manage incident repor
 📂 Project Structure
 
 src/
- └── main/
-     ├── java/
-     │    └── org.example
-     │         ├── controller/
-     │         ├── model/
-     │         ├── repository/
-     │         ├── service/
-     │         └── exception/
-     └── resources/
-          ├── application.properties
+    main/
+        java/
+            org.example
+              controller/
+               model/
+               repository/
+               service/
+               exception/
+       resources/
+          application.properties
 
           
  🚀 How to Run
@@ -42,6 +41,7 @@ src/
 2. Clone this repository:
    
    in bash
+   
    git clone https://github.com/your-username/incidentlogapi.git
    
    cd incidentlogapi
@@ -52,7 +52,7 @@ src/
    CREATE DATABASE incidentdb;
 
 5. Configure `src/main/resources/application.properties`:
-6. 
+ 
 MySQL Database Configuration
 
 spring.datasource.url=jdbc:mysql://localhost:3306/your_db
@@ -113,7 +113,8 @@ Postman-
  
 -Header "Content-Type: application/json" 
 
--description {
+-description 
+{
   "title": "Server Crash",
   
   "description": "The server went down during heavy traffic.",
